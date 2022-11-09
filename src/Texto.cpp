@@ -222,6 +222,7 @@ void Texto::resaltar3(int opc){
             break;
     }
 }
+
 void Texto::resaltar4(int opc){
     switch(opc){
         case 1:
@@ -262,6 +263,7 @@ void Texto::resaltar4(int opc){
             break;
     }
 }
+
 void Texto::resaltar5(int opc){
     switch(opc){
         case 1:
@@ -302,6 +304,7 @@ void Texto::resaltar5(int opc){
             break;
     }
 }
+
 void Texto::resaltar6(int opc){
     switch(opc){
         case 1:
@@ -330,3 +333,4 @@ void Texto::resaltar6(int opc){
             break;
     }
 }
+

@@ -10,7 +10,6 @@ class Fecha{
         int anio; /// menor o igual al actual
         int hora; /// 0 - 23
         int minuto; /// 0 - 59
-        bool esBisiesto(int);
     public:
         /// CONSTRUCTOR
         Fecha();
@@ -18,6 +17,7 @@ class Fecha{
         bool Cargar();
         void MostrarFecha();
         void MostrarHora();
+        bool esBisiesto(int);
         /// METODOS VALIDACION
         bool validarFechaTurno(Fecha);
         /// SETS

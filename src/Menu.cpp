@@ -1,6 +1,6 @@
 #include "Menu.h"
 
-#include "../controller/funcionesPersona.h"
+#include "../controller/funcionesPersonal.h"
 #include "../controller/funcionesServicios.h"
 #include "../controller/funcionesCuentas.h"
 #include "../controller/funcionesClientes.h"
@@ -64,7 +64,7 @@ void Menu::Turnos(){
     rlutil::hidecursor();
     system("cls");
     while (opc != 0){
-        setLista({20, 16}, 60, 40);
+        setLista({10, 16}, 80, 40);
         setCuadro({37, 10}, 25, 4, opc);
         _lista.dibujarLista();
         _cuadro.dibujar();
