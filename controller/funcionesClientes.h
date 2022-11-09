@@ -9,6 +9,7 @@ using namespace std;
 
 int agregarRegistroCliente();
     Cliente cargarCliente();
+    bool validarCliente(int nD);
 
 bool modificarTelefonoCliente();
     int buscarIdCliente(int idC);
@@ -58,6 +59,12 @@ Cliente cargarCliente(){
     gotoxy(42, 19);
     cout << "DNI CLIENTE: ";
     cin >> nD;
+    if(validarCliente(nD) == true){
+        gotoxy(32, 26);
+        cout << "EL CLIENTE INGERSADO ESTA REGISTRADO";
+        usuario.setEstado(false);
+        return usuario;
+    }
     idC = archi.contarRegistro(usuario); // ESTE SERIA PK AUTOINCREMENTAL DE CLIENTE
     if(idC == -1){
         gotoxy(38, 21);
@@ -68,6 +75,19 @@ Cliente cargarCliente(){
     idC++;
     usuario.Cargar(nD, idC);
     return usuario;
+}
+
+bool validarCliente(int nD){
+    Cliente usuario;
+    Archivo archi;
+    int pos = 0;
+    while(archi.leerDeDisco(pos, usuario)){
+        if(nD == usuario.getDNI() && usuario.getEstado() == true){
+            return usuario.getEstado();
+        }
+        pos++;
+    }
+    return false;
 }
 
 // 2 MODIFICA POR DNI LOS REGISTROS DE CLIENTES DEL ARCHIVO Clientes.dat
