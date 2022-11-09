@@ -20,11 +20,6 @@ Turno::Turno(int idC = 0, int d = 0, int ts = 0, int idP = 0, bool e = false){
     estado = e;
 }
 
-// DESTRUCTOR
-Turno::~Turno(){
-    // dtor
-}
-
 // METODOS
 bool Turno::Cargar(int idT, Fecha _fecha, int idC, int ts, int idP){
     setIdTurno(idT);

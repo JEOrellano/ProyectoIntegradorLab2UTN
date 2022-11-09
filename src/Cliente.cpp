@@ -17,29 +17,29 @@ Cliente::Cliente()
 bool Cliente::Cargar(int nD, int idC){
     if(!setDNI(nD)){
         rlutil::hidecursor();
-        gotoxy(35, 20);
+        gotoxy(35, 21);
         cout << "EL DNI DEBE SER UN VALOR POSITIVO" << endl;
         return false;
     }
-    gotoxy(42, 20);
-    cout << "NOMBRE: ";
     gotoxy(42, 21);
-    cout << "APELLIDO: ";
+    cout << "NOMBRE: ";
     gotoxy(42, 22);
-    cout << "TELEFONO: ";
+    cout << "APELLIDO: ";
     gotoxy(42, 23);
+    cout << "TELEFONO: ";
+    gotoxy(42, 24);
     cout << "EMAIL: ";
-    gotoxy(50, 20);
+    gotoxy(50, 21);
     rlutil::showcursor();
     cargarCadena(nombre, 29);
     setNombre(nombre);
-    gotoxy(52, 21);
+    gotoxy(52, 22);
     cargarCadena(apellido, 29);
     setApellido(apellido);
-    gotoxy(52, 22);
+    gotoxy(52, 23);
     cargarCadena(telefono, 39);
     setTelefono(telefono);
-    gotoxy(50, 23);
+    gotoxy(49, 24);
     cargarCadena(email, 39);
     if(!setEmail(email)){
         rlutil::hidecursor();
@@ -59,17 +59,17 @@ bool Cliente::Cargar(int nD, int idC){
 void Cliente::Mostrar()
 {
     if(estado){
-        gotoxy(34, 20);
+        gotoxy(42, 21);
         cout << "DNI: " << DNI;
-        gotoxy(34, 21);
+        gotoxy(42, 22);
         cout << "NOMBRE: " << nombre;
-        gotoxy(34, 22);
+        gotoxy(42, 23);
         cout << "APELLIDO: " << apellido;
-        gotoxy(34, 23);
+        gotoxy(42, 24);
         cout << "TELEFONO: " << telefono;
-        gotoxy(34, 24);
+        gotoxy(42, 25);
         cout << "EMAIL: " << email;
-        gotoxy(34, 25);
+        gotoxy(42, 26);
         cout << "ID CUENTA: " << idCuenta;
     }
 }
@@ -119,9 +119,3 @@ const char *Cliente::getTelefono(){return telefono;}
 const char *Cliente::getEmail(){return email;}
 int Cliente::getIdCuenta(){return idCuenta;}
 bool Cliente::getEstado(){return estado;}
-
-/// DESTRUCTOR
-Cliente::~Cliente()
-{
-    //dtor
-}

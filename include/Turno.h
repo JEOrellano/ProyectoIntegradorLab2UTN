@@ -32,8 +32,6 @@ class Turno
         int getTipoServicio();
         int getIdPersonal();
         bool getEstado();
-        // DESTRUCTOR
-        ~Turno();
 };
 
 #endif // TURNO_H

@@ -34,8 +34,6 @@ class Cliente
         const char *getEmail();
         int getIdCuenta();
         bool getEstado();
-        /// DESTRUCTOR
-        ~Cliente();
 };
 
 #endif // CLIENTE_H

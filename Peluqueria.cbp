@@ -23,7 +23,7 @@
 		</Compiler>
 		<Unit filename="controller/funcionesClientes.h" />
 		<Unit filename="controller/funcionesCuentas.h" />
-		<Unit filename="controller/funcionesPersona.h" />
+		<Unit filename="controller/funcionesPersonal.h" />
 		<Unit filename="controller/funcionesServicios.h" />
 		<Unit filename="controller/funcionesTurnos.h" />
 		<Unit filename="include/Archivo.h" />
