@@ -32,7 +32,7 @@ void agregarCuentaCliente(Cliente cliente){
         cout << "FALLO AL GRABAR EN DISCO" << endl;
         return;
     }
-    gotoxy (36, 28);
+    gotoxy (37, 28);
     cout << "CUENTA CREADA EXITOSAMENTE" << endl;
 }
 

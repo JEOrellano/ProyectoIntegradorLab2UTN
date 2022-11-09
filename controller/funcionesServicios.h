@@ -22,9 +22,9 @@ void eliminarServicio();
 
 void agregarRegistroServicio(){
     Cuadro cuadro;
-    cuadro.setCoor({30,16});
+    cuadro.setCoor({26,16});
     cuadro.setalto(8);
-    cuadro.setlargo(40);
+    cuadro.setlargo(48);
     cuadro.dibujar();
     Archivo archivo;
     Servicio servicio;
@@ -38,8 +38,6 @@ void agregarRegistroServicio(){
     var += 1;
     rlutil::showcursor();
     if(servicio.cargar(var)==false){
-        gotoxy (35, 22);
-        cout << "EL PRECIO NO PUEDE SER NEGATIVO" << endl;
         return;
     }
     if(archivo.grabarEnDisco(servicio)==false){

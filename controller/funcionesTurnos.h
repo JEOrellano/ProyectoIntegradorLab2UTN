@@ -322,7 +322,7 @@ void mostrarTunoDelDia(){
                 cout << citasD[i].getFechaServicio().getDia()<< "/" << citasD[i].getFechaServicio().getMes();
                 gotoxy(40, 19+(posY*2));
                 cout << usuario.getNombre();
-                gotoxy(55, 19+(posY*2));
+                gotoxy(54, 19+(posY*2));
                 cout << personal.getNombre();
                 gotoxy(66, 19+(posY*2));
                 cout << servicio.getDescripcion();

@@ -30,9 +30,9 @@ int agregarRegistroCliente(){
     Cliente usuario;
     Archivo archi;
     Cuadro cuadroClienteCarga;
-    cuadroClienteCarga.setCoor({30,17});
+    cuadroClienteCarga.setCoor({26,17});
     cuadroClienteCarga.setalto(13);
-    cuadroClienteCarga.setlargo(40);
+    cuadroClienteCarga.setlargo(48);
     cuadroClienteCarga.dibujar();
     rlutil::showcursor();
     usuario = cargarCliente();
@@ -56,11 +56,11 @@ Cliente cargarCliente(){
     int nD;
     int idC;
     Archivo archi;
-    gotoxy(42, 19);
+    gotoxy(40, 19);
     cout << "DNI CLIENTE: ";
     cin >> nD;
     if(validarCliente(nD) == true){
-        gotoxy(32, 26);
+        gotoxy(32, 24);
         cout << "EL CLIENTE INGERSADO ESTA REGISTRADO";
         usuario.setEstado(false);
         return usuario;

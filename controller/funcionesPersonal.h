@@ -22,9 +22,9 @@ void eliminarPersonal();
 
 void agregarRegistroPersonal(){
     Cuadro cuadro;
-    cuadro.setCoor({30,16});
+    cuadro.setCoor({26,16});
     cuadro.setalto(10);
-    cuadro.setlargo(40);
+    cuadro.setlargo(48);
     cuadro.dibujar();
     int var;
     Archivo archivo;
@@ -38,8 +38,6 @@ void agregarRegistroPersonal(){
     var += 1;
     rlutil::showcursor();
     if(personal.cargar(var)==false){
-        gotoxy (35, 24);
-        cout << "EL SUELDO NO PUEDE SER NEGATIVO" << endl;
         return;
     }
     if(archivo.grabarEnDisco(personal)==false){

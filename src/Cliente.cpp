@@ -17,29 +17,41 @@ Cliente::Cliente()
 bool Cliente::Cargar(int nD, int idC){
     if(!setDNI(nD)){
         rlutil::hidecursor();
-        gotoxy(35, 21);
-        cout << "DNI POSITIVO Y DE 7 DIGITOS MIN" << endl;
+        gotoxy(37, 22);
+        cout << " El DNI DEBE SER POSITIVO" << endl;
+        gotoxy(34, 24);
+        cout << " DEBE TENER COMO MINIMO 7 DIGITOS" << endl;
         return false;
     }
-    gotoxy(42, 21);
+    gotoxy(40, 21);
     cout << "NOMBRE: ";
-    gotoxy(42, 22);
+    gotoxy(40, 22);
     cout << "APELLIDO: ";
-    gotoxy(42, 23);
+    gotoxy(40, 23);
     cout << "TELEFONO: ";
-    gotoxy(42, 24);
+    gotoxy(40, 24);
     cout << "EMAIL: ";
-    gotoxy(50, 21);
+    gotoxy(48, 21);
     rlutil::showcursor();
     cargarCadena(nombre, 29);
+    if(validarCadena(nombre)==false){
+        gotoxy (29, 27);
+        cout << "ERROR, INGRESAR SOLO CARACTERES ALFABETICOS";
+        return false;
+    }
     setNombre(nombre);
-    gotoxy(52, 22);
+    gotoxy(50, 22);
     cargarCadena(apellido, 29);
+    if(validarCadena(apellido)==false){
+        gotoxy (29, 27);
+        cout << "ERROR, INGRESAR SOLO CARACTERES ALFABETICOS";
+        return false;
+    }
     setApellido(apellido);
-    gotoxy(52, 23);
+    gotoxy(50, 23);
     cargarCadena(telefono, 39);
     setTelefono(telefono);
-    gotoxy(49, 24);
+    gotoxy(47, 24);
     cargarCadena(email, 39);
     if(!setEmail(email)){
         rlutil::hidecursor();

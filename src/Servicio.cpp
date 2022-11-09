@@ -21,10 +21,18 @@ bool Servicio::cargar(int var){
     cout << "PRECIO: ";
     gotoxy(51,18);
     cargarCadena(descripcion,29);
+    if(validarCadena(descripcion)==false){
+        rlutil::hidecursor();
+        gotoxy (29, 22);
+        cout << "ERROR, INGRESAR SOLO CARACTERES ALFABETICOS";
+        return false;
+    }
     gotoxy(51,20);
     cin >> pre;
-    rlutil::hidecursor();
     if(setPrecio(pre)==false){
+        gotoxy (35, 22);
+        rlutil::hidecursor();
+        cout << "EL PRECIO NO PUEDE SER NEGATIVO" << endl;
         return false;
     }
     estado = true;

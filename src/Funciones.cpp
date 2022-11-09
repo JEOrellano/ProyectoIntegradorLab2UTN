@@ -51,3 +51,20 @@ void cargarCadena(char *pal, int tam){  /// CARGA CADENAS DE CARACTERES
     pal[i] = '\0';
     fflush(stdin);
 }
+
+/// VALIDAR CADENA
+
+bool validarCadena(string x){
+    int i;
+    char c;
+    for(i=0;i<x.size();i++){
+        c=x[i];
+        if(isalpha(c)==0){
+            if(isspace(c)==0){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="controller\funcionesTurnos.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7577" topLine="165" />
+		</Cursor>
+		<Folding>
+			<Collapse line="68" />
+			<Collapse line="131" />
+			<Collapse line="144" />
+			<Collapse line="157" />
+			<Collapse line="172" />
+			<Collapse line="223" />
+			<Collapse line="240" />
+		</Folding>
+	</File>
+	<File name="src\Funciones.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1302" topLine="24" />
+		</Cursor>
+		<Folding>
+			<Collapse line="20" />
+		</Folding>
+	</File>
+	<File name="controller\funcionesCuentas.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="566" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="controller\funcionesServicios.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="654" topLine="48" />
+		</Cursor>
+	</File>
+	<File name="src\Fecha.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="162" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="src\Cuentas.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="167" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="controller\funcionesPersonal.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="504" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="src\Personal.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="566" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="controller\funcionesClientes.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="791" topLine="24" />
+		</Cursor>
+		<Folding>
+			<Collapse line="28" />
+			<Collapse line="79" />
+			<Collapse line="94" />
+		</Folding>
+	</File>
+	<File name="include\Funciones.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="283" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Cliente.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1081" topLine="44" />
+		</Cursor>
+	</File>
+	<File name="src\Servicio.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="553" topLine="12" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

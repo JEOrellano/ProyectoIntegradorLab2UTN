@@ -1,0 +1,148 @@
+# depslib dependency file v1.0
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<windows.h>
+	<ctime>
+	"Funciones.h"
+	"Fecha.h"
+	"Personal.h"
+	"Cliente.h"
+	"Turno.h"
+	"Cuentas.h"
+	"Menu.h"
+	"Origen.h"
+
+1668026733 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\funciones.h
+	"rlutil.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\fecha.h
+	"rlutil.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\personal.h
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\cliente.h
+	"Funciones.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\turno.h
+	"Fecha.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\cuentas.h
+	"Fecha.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\menu.h
+	"Cuadro.h"
+	"Archivo.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\cuadro.h
+	"Texto.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\texto.h
+	"Funciones.h"
+	"Origen.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\origen.h
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\archivo.h
+	"Personal.h"
+	"Cliente.h"
+	"Turno.h"
+	"Servicio.h"
+	"Cuentas.h"
+
+1668019815 c:\users\anthony\desktop\proyectointegradorlab2utn-main\include\servicio.h
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\archivo.cpp
+	"Archivo.h"
+
+1668027573 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\cliente.cpp
+	"Cliente.h"
+	<iostream>
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\cuadro.cpp
+	"Cuadro.h"
+	<iostream>
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\cuentas.cpp
+	"Cuentas.h"
+	"Archivo.h"
+	<iostream>
+	<cstdio>
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\fecha.cpp
+	"Fecha.h"
+	<iostream>
+	<cstdio>
+	<ctime>
+
+1668026733 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\funciones.cpp
+	<cstdio>
+	<ctime>
+	<windows.h>
+	<iostream>
+	"Cliente.h"
+	"Archivo.h"
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\menu.cpp
+	"Menu.h"
+	"../controller/funcionesPersonal.h"
+	"../controller/funcionesServicios.h"
+	"../controller/funcionesCuentas.h"
+	"../controller/funcionesClientes.h"
+	"../controller/funcionesTurnos.h"
+
+1668027171 c:\users\anthony\desktop\proyectointegradorlab2utn-main\controller\funcionespersonal.h
+	<iostream>
+
+1668026824 c:\users\anthony\desktop\proyectointegradorlab2utn-main\controller\funcionesservicios.h
+	<iostream>
+
+1668024735 c:\users\anthony\desktop\proyectointegradorlab2utn-main\controller\funcionescuentas.h
+	<iostream>
+
+1668025018 c:\users\anthony\desktop\proyectointegradorlab2utn-main\controller\funcionesclientes.h
+	<iostream>
+
+1668025523 c:\users\anthony\desktop\proyectointegradorlab2utn-main\controller\funcionesturnos.h
+	<iostream>
+	<ctime>
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\origen.cpp
+	"Origen.h"
+
+1668027277 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\personal.cpp
+	"Personal.h"
+	"Archivo.h"
+	<iostream>
+	<cstdio>
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\texto.cpp
+	"Texto.h"
+	<iostream>
+
+1668019815 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\turno.cpp
+	"Turno.h"
+	<iostream>
+	"Funciones.h"
+
+1668026910 source:c:\users\anthony\desktop\proyectointegradorlab2utn-main\src\servicio.cpp
+	"Servicio.h"
+	"Archivo.h"
+	<iostream>
+	<cstdio>
+

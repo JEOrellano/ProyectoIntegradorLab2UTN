@@ -25,12 +25,26 @@ bool Personal::cargar(int var){
     cout << "SUELDO: ";
     gotoxy(50,18);
     cargarCadena(nombre,29);
+    if(validarCadena(nombre)==false){
+        rlutil::hidecursor();
+        gotoxy (29, 24);
+        cout << "ERROR, INGRESAR SOLO CARACTERES ALFABETICOS";
+        return false;
+    }
     gotoxy(51,20);
     cargarCadena(apellido, 39);
+    if(validarCadena(apellido)==false){
+        rlutil::hidecursor();
+        gotoxy (29, 24);
+        cout << "ERROR, INGRESAR SOLO CARACTERES ALFABETICOS";
+        return false;
+    }
     gotoxy(49,22);
     cin >> var;
     rlutil::hidecursor();
     if(setSueldo(var)==false){
+        gotoxy (35, 24);
+        cout << "EL SUELDO NO PUEDE SER NEGATIVO" << endl;
         return false;
     }
     estado = true;
